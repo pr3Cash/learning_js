@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="shivadesign.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="one">
+        <img src="./assets/foodtruck_logo.jpg" alt="">
+            <div id="liveforfood">
+                LIVE FOR FOOD
+            </div>
+            <form action="./createnewuser.php" id="form1">
+                <p>Enter your phone number or email address</p>
+                <input type="text" name="phoneno" id="phoneno" placeholder="Mobile number or email address" value="">
+                <input class="btn" type="button" value="Get Started">
+            </form>
+     <span id="or"> OR</span>
+      <div id="icons">
+     <img class="icons" src="./assets/search.png" alt="">
+     <img class="icons" src="./assets/fb_logo.png" alt="">
+     <img class="icons twt" src="./assets/twitter-icon.png" alt="">
+      </div>
+    </div>
+
+    <div id="two">
+            <p id="backicon">&#8617;</p>
+            <div>
+                <p id="cyno">Confirm your number</p>
+                <p id="c4">Enter the 4 digit code sent to the<br>registered number</p>
+            </div>    
+            <form action="./otpsubmission.php" id="form2">
+                <input type="text" id="c1" name="c1" value="" class="fillup_box"></input>
+                <input type="text" id="c2" name="c2" value="" class="fillup_box"></input>
+                <input type="text" id="c3" name="c3" value="" class="fillup_box"></input>
+                <input type="text" id="c4" name="c4" value="" class="fillup_box"></input>
+                <p>Send code again</p>
+                <input class="btn" type="button" value="Confirm">
+            </form>
+    </div>
+    <div id="tri">
+        <div>
+            <p id="backicon">&#8617;</p>
+            <span id="skip">Skip</span>
+        </div>
+        <div>
+            <p id="cyno">Setup your profile</p>
+            <div>
+                <img src="./assets/user_img.jpg" alt="">
+                <p id="uyp">Upload your<br>photo</p>
+                <div id="uyp"></div>
+            </div>
+        </div>
+        <form action="newuserdetails" id="form3">
+            <label for="Uname">Name</label>
+            <input type="text" name="Uname" id="Uname">
+            <label for="Umob">Mobile</label>
+            <input type="text" name="Umob" id="Umob">
+            <label for="Uemail">Email</label>
+            <input type="text" name="Uemail" id="Uemail">
+            <label for="address">Address</label>
+            <input type="email" name="address" id="address">
+
+            <input class="btn" type="button" value="Continue">
+        </form>
+    </div>
+</body>
+</html>
