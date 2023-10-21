@@ -1,0 +1,47 @@
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.con{
+    width: 60%;
+    height: 250px;
+    background-color: aliceblue;
+    border-radius: 30px;
+    box-shadow: 0 0 3px;
+}
+
+#timer{
+    width: 100%;
+    font-size: 72px;
+    text-align: center;
+    margin: 0px auto;
+    padding: 35px;
+}
+
+.btns{
+    text-align: center;
+}
+
+button{
+margin: 0 10px;
+border: none;
+}
+
+button i{
+    font-size: 2rem;
+    padding: 10px;
+    color: aliceblue;
+}
+
+#play{
+    background-color: green;
+}
+#pause{
+    background-color: green;
+}
+#reset{
+    background-color: green;
+}
