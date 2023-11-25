@@ -12,14 +12,14 @@ openBtn.addEventListener('click',function(){
 
 closeBtn.addEventListener('click',function(){
 
-    //modalContainer.style.display = 'none';
-modalContainer.remove();
+    modalContainer.style.display = 'none';
+//modalContainer.remove();
 });
 
 window.addEventListener('click',function(e){
     if(e.target === modalContainer){
-        //modalContainer.style.display = 'none';
-        modalContainer.remove();
+        modalContainer.style.display = 'none';
+        //modalContainer.remove();
     }
 })
 
