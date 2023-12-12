@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+*{
+    margin: 0;padding: 0;
+box-sizing: border-box;
+background-color: wheat;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/background.png);
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+}
+.logo{
+    width: 120px;
+    padding: 20px 0;
+    cursor: pointer;
+}
+.content{
+    top: 50%;
+    position: absolute;
+    transform: translateY(-50%);
+}
+.content h1{
+    font-size: 64px;
+    font-weight: 600;
+}
+.content h1 span{
+    color: #f28c53;
+
+}
+.content button{
+    background: transparent;
+    border: 2px solid #fff;
+    outline: 0;
+    padding: 12px 25px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    margin-top: 30px;
+    cursor: pointer;
+}
+.content button img{
+    width: 15px;
+    margin-left: 10px;
+}
+.launch-time{
+    display: flex;
+}
+.launch-time div{
+    flex-basis: 100px;
+}
+.launch-time div p{
+    font-size: 60px;
+    margin-bottom: 14px;
+}
+.rocket{
+    width: 250px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+    animation: rocket 4s linear infinite;
+}
+@keyframes rocket {
+    /* 0%{
+        bottom: 0%;
+        opacity: 0;
+    } */
+    /* 50%{
+        bottom: 0; 
+        opacity: 0.5;
+    } */
+    /* 100%{
+        bottom: 100%; 
+        opacity: 1;
+    } */
+}
+</style>
+</head>
+<body>
+    <div class="container">
+        <img src="logo.jpg" alt="logo" class="logo">
+
+        <div class="content">
+            <p>Website is under maintenance</p>
+            <h1>We're <span>Launching Soon</span></h1>
+            <div class="launch-time">
+                <div>
+                    <p id="days">00</p>
+                    <span>Days</span>
+                </div>
+                <div>
+                    <p id="hours">00</p>
+                    <span>Hrs</span>
+                </div>
+                <div>
+                    <p id="mins">00</p>
+                    <span>Mins</span>
+                </div>
+                <div>
+                    <p id="secs">00</p>
+                    <span>Secs</span>
+                </div>
+            </div>
+            <button type="button">Learn more
+                <img src="trio" alt="button">
+            </button>
+        </div>
+        <img src="rocket.svg" alt="rocket" class="rocket">
+    </div>
+    <script>
+let countDD = new Date("jan 1, 2024 00:00:00").getTime();
+let x = setInterval(function(){
+    let now = new Date().getTime();
+    let dist = countDD - now;
+
+    let days = Math.floor(dist / (1000*60*60*24));
+    let hours = Math.floor((dist % (1000*60*60*24)) / (1000*60*60));
+    let mins = Math.floor((dist % (1000*60*60)) / (1000*60));
+    let secs = Math.floor((dist % (1000*60)) / 1000);
+
+    
+    document.getElementById("days").innerHTML = days;
+    document.getElementById("hours").innerHTML = hours;
+    document.getElementById("mins").innerHTML = mins;
+    document.getElementById("secs").innerHTML = secs;
+
+    if (dist < 0) {
+        clearInterval(x);
+        document.getElementById("days").innerHTML = "00";
+    document.getElementById("hours").innerHTML = "00";
+    document.getElementById("mins").innerHTML = "00";
+    document.getElementById("secs").innerHTML = "00";
+    }
+},1000);
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="input-box">
+        <input type="password" placeholder="password" id="pswd">
+        <img src="./assets/off.svg" id="eyeicon">
+    </div>
+
+    <script src="script.js">
+        let eyeicon = document.getElementById('eyeicon');
+let password = document.getElementById('pswd');
+
+// eyeicon.addEventListener('click',()=>{
+eyeicon.onclick = function(){
+            alert('etea')
+    if(password.type == 'password'){
+        password.type == 'text';
+        eyeicon.src == "./assets/on.svg"
+    }
+    else{
+        password.type == 'password';
+        eyeicon.src == "./assets/off.svg";
+    }
+    
+}
+    </script> 
+</body>
+</html>
