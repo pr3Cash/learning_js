@@ -30,18 +30,3 @@ server.on('request',(req,res)=>{
 
 server.listen(5000)
 
-
-
-// const server = http.createServer((req,res)=>{
-
-//     if (req.url === '/abc') {
-//         res.end(req.url)    
-//     }
-//     if (req.url === '/') {
-//         res.end('./start.html')    
-//         res.pipe;
-//     }
-
-//     res.end(`<h1> oops that messed up! got into wrong file`)
-// }).listen(5000)
-
