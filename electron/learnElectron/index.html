@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Hello World!</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <h1>Hello World!</h1>
+    <p id="theme-source">Electron with vanilla js</p>
+
+    <button id="toggle-dark-mode">Dark mode</button>
+    <button id="reset-to-system">Dark mode</button>
+
+
+    <script src="./renderer.js"></script>
+  </body>
+</html>

@@ -1,3 +1,5 @@
 node_modules/
-node_modules/
-my-app/
+nodeJS/
+my-app/chatApp
+my-app/xpress
+vite

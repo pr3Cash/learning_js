@@ -1,0 +1,16 @@
+{
+  "name": "hard-stomach-touch-ipy9y",
+  "productName": "hard-stomach-touch-ipy9y",
+  "description": "My Electron application description",
+  "keywords": [],
+  "main": "./main.js",
+  "version": "1.0.0",
+  "author": "pr3cash",
+  "scripts": {
+    "start": "electron ."
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "28.2.2"
+  }
+}

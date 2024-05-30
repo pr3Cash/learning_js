@@ -1,2 +1,0 @@
-this is awesone: hello, welcome to node js,this is 1st module. 
- hello this is 2nd module.this is awesone: hello, welcome to node js,this is 1st module.  hello this is 2nd module.
